@@ -1,0 +1,94 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+    <title>Products<span id="selection-marker-1" class="redactor-selection-marker"></span></title> 
+    
+<script>    
+!function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","debug","page","once","off","on"];analytics.factory=function(t){return function(){var e=Array.prototype.slice.call(arguments);e.unshift(t);analytics.push(e);return analytics}};for(var t=0;t<analytics.methods.length;t++){var e=analytics.methods[t];analytics[e]=analytics.factory(e)}analytics.load=function(t,e){var n=document.createElement("script");n.type="text/javascript";n.async=!0;n.src="https://cdn.segment.com/analytics.js/v1/"+t+"/analytics.min.js";var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(n,a);analytics._loadOptions=e};analytics.SNIPPET_VERSION="4.1.0";
+  analytics.load('7JDFgGxRGnw3qtiFe29bXkJ26L08Eml4');
+  analytics.page();
+}}();
+var script = document.createElement('script');
+script.type = 'text/javascript';
+script.setAttribute('src','https://unpkg.com/@segment/tracktor');
+script.setAttribute('data-workspace-id', 'mjM0NJKxKQ');
+script.setAttribute('data-source-id', '8KqWZewhlM');
+document.head.appendChild(script);
+</script>   
+    
+    <script type="text/javascript" src="js/vendor/jquery.min.js"></script>
+    <script type="text/javascript" src="js/vendor/bootstrap.min.js "></script>
+    <script type="text/javascript" src="js/vendor/lodash.min.js"></script>
+    <script type="text/javascript" src="js/vendor/cookies.min.js"></script>
+    <script type="text/javascript" src="js/vendor/qs.min.js"></script>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/styles/default.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/highlight.min.js"></script>
+
+    <script type="text/javascript" src="js/app.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+
+    <link rel="stylesheet" href="css/styles.min.css">
+    <link rel="stylesheet" type="text/css" href="css/app.css">
+
+</head> 
+   
+<body>
+
+    <div class="top-notice">
+        <div class="container">
+            <div class="row">
+                <div class="row-xs-12">
+                    <h3>
+                        <span class="icon icon-info-sign"></span>
+                        How Segment works on this page works
+                    </h3>
+                    <p class="lead">
+                        This is a product page. On load, we have sent the Product Viewed event. We will only send an Product Added event when a user presses the Add to Cart button. We'll also make sure to use the same unique identifier as the page before, so we can connect the actions for this specific user.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row" id="product-container">
+            <div class="col-xs-12 col-md-8">
+                <div class="product-image" data-product-image></div>
+                
+            </div>
+
+            <div class="col-xs-12 col-md-4">
+                <class="product-title" data-product-title></h1>
+                <div class="product-description">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </div>
+
+                <a href="#" class="btn btn-primary add-to-cart">Add to Cart</a>
+                <a href="cart.html" class="btn btn-danger cart">Checkout</a>
+            </div>
+        </div>
+    </div> 
+
+<script type="text/javascript">
+      function identify(e){
+        e.preventDefault();
+        };
+
+        analytics.track('Product Viewed', user, function() {
+            window.location.href = "";
+        });
+      }
+</script>
+    
+</body> 
+</html>
+
+
+
+
+
