@@ -55,21 +55,21 @@ document.head.appendChild(script);
             <div class="col-xs-12 col-sm-6 col-md-4" data-product-id="1">
                 <div class="product-listing">
                     <div class="product-image" data-product-image><p class="loading">Loading...</p></div>
-                    <a href="product.html?product-id=1" class="btn btn-primary">View Product</a>
+                    <a href="product.html" id="addproduct1" class="btn btn-primary">View Product</a>
                 </div>
             </div>
 
             <div class="col-xs-12 col-sm-6 col-md-4" data-product-id="2">
                 <div class="product-listing">
                     <div class="product-image" data-product-image><p class="loading">Loading...</p></div>
-                    <a href="product.html?product-id=2" class="btn btn-primary">View Product</a>
+                    <a href="product.html" id="addproduct2" class="btn btn-primary">View Product</a>
                 </div>
             </div>
 
             <div class="col-xs-12 col-sm-6 col-md-4" data-product-id="3">
                 <div class="product-listing">
                     <div class="product-image" data-product-image><p class="loading">Loading...</p></div>
-                    <a href="product.html?product-id=3" class="btn btn-primary">View Product</a>
+                    <a href="product.html" id="addproduct3" class="btn btn-primary">View Product</a>
                 </div>
             </div>
         </div>
@@ -78,48 +78,25 @@ document.head.appendChild(script);
             <div class="col-xs-12 col-sm-6 col-md-4" data-product-id="4">
                 <div class="product-listing">
                     <div class="product-image" data-product-image><p class="loading">Loading...</p></div>
-                    <a href="product.html?product-id=4" class="btn btn-primary">View Product</a>    
+                    <a href="product.html" id="addproduct4" class="btn btn-primary">View Product</a>    
                 </div>
             </div>
 
             <div class="col-xs-12 col-sm-6 col-md-4" data-product-id="5">
                 <div class="product-listing">
                     <div class="product-image" data-product-image><p class="loading">Loading...</p></div>
-                    <a href="product.html?product-id=5" class="btn btn-primary">View Product</a>
+                    <a href="product.html" id="addproduct5" class="btn btn-primary">View Product</a>
                 </div>
             </div>
 
             <div class="col-xs-12 col-sm-6 col-md-4" data-product-id="6">
                 <div class="product-listing">
                     <div class="product-image" data-product-image><p class="loading">Loading...</p></div>
-                    <a href="product.html?product-id=6" class="btn btn-primary">View Product</a>
+                    <a href="product.html" id="addproduct6" class="btn btn-primary">View Product</a>
                 </div>
             </div>
         </div>
-
-        <div class="row products-row">
-            <div class="col-xs-12 col-sm-6 col-md-4" data-product-id="7">
-                <div class="product-listing">
-                    <div class="product-image" data-product-image><p class="loading">Loading...</p></div>
-                    <a href="product.html?product-id=7" class="btn btn-primary">View Product</a>    
-                </div>
-            </div>
-
-            <div class="col-xs-12 col-sm-6 col-md-4" data-product-id="8">
-                <div class="product-listing">
-                    <div class="product-image" data-product-image><p class="loading">Loading...</p></div>
-                    <a href="product.html?product-id=8" class="btn btn-primary">View Product</a>
-                </div>
-            </div>
-
-            <div class="col-xs-12 col-sm-6 col-md-4" data-product-id="9">
-                <div class="product-listing">
-                    <div class="product-image" data-product-image><p class="loading">Loading...</p></div>
-                    <a href="product.html?product-id=9" class="btn btn-primary">View Product</a>
-                </div>
-            </div>
-        </div>
-    </div>
+     </div>
     
     
 <h1>Sign up for our newsletter</h1> 
@@ -167,6 +144,39 @@ document.head.appendChild(script);
             window.location.href = "";
         });
       }
+          
+  var link = document.getElementById('addproduct1');
+  analytics.trackLink(link, 'Product Added', {
+    product: '1',
+    pageTitle: document.title
+  });
+  var link = document.getElementById('addproduct2');
+  analytics.trackLink(link, 'Product Added', {
+    product: '2',
+    pageTitle: document.title
+  });
+  var link = document.getElementById('addproduct3');
+  analytics.trackLink(link, 'Product Added', {
+    product: '3',
+    pageTitle: document.title
+  });
+  var link = document.getElementById('addproduct4');
+  analytics.trackLink(link, 'Product Added', {
+    product: '4',
+    pageTitle: document.title
+  });
+  var link = document.getElementById('addproduct5');
+  analytics.trackLink(link, 'Product Added', {
+    product: '5',
+    pageTitle: document.title
+  });
+  var link = document.getElementById('addproduct6');
+  analytics.trackLink(link, 'Product Added', {
+    product: '6',
+    pageTitle: document.title
+  });
+          
+          
 </script>
     
 </body> 
